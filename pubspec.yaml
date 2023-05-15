@@ -3,7 +3,6 @@ description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-
 version: 1.0.0+1
 
 environment:
@@ -20,7 +19,9 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
-
+  flutter_launcher_icons: ^0.13.1
+  test: ^1.22.0
+  flutter_native_splash: ^2.2.19
 
 flutter:
   uses-material-design: true
