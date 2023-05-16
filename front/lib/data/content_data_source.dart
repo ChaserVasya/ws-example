@@ -7,9 +7,11 @@ import 'package:ws_example/domain/content.dart';
 @injectable
 class ContentDataSource {
   static const _timeout = Duration(seconds: 3);
-  static final _uri = Uri.parse('ws://0.0.0.0:8081/ws');
+  static final _uri = Uri.parse('ws://176.113.82.72:8080/ws');
   late WebSocketChannel _channel;
 
+  // по хорошему, надо сюда тот же Codec с бэка засунуть. Это можно сделать через доп common либу.
+  // но это будет слишком жирно для такого маленького проекта
   Future<Stream<List<Content>>> connect() async {
     _channel = WebSocketChannel.connect(_uri);
     await _ensureConnected();
