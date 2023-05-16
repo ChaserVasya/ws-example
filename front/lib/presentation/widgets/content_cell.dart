@@ -16,6 +16,12 @@ class _ContentCellState extends State<ContentCell> {
   late final controller = TextEditingController(text: widget.content.body);
 
   @override
+  void didUpdateWidget(covariant ContentCell oldWidget) {
+    controller.text = widget.content.body;
+    super.didUpdateWidget(oldWidget);
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       decoration: ShapeDecoration(

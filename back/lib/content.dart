@@ -13,4 +13,9 @@ class Content {
 
   final int id;
   String body;
+
+  @override
+  String toString() {
+    return 'Content(id:$id, body: $body)';
+  }
 }
