@@ -1,11 +1,20 @@
-# Compiled files
-build/*
+# See https://www.dartlang.org/guides/libraries/private-files
 
-# TypeScript v1 declaration files
-typings/
+# Files and directories created by pub
+.dart_tool/
+.packages
+pubspec.lock
 
-# Node.js dependency directory
-node_modules/
+# Files and directories created by dart_frog
+build/
+.dart_frog
+
+# Test related files
+coverage/
 
 # sensitive
-*/sensitive/
+*.pem
+
+# generated
+*.g.dart
+*.freezed.dart
